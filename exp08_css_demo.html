@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styling Demo</title>
+    <style>
+        /* Body with background image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Container with solid background */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Different font styles */
+        h1 {
+            font-family: Georgia, serif;
+            color: #2c3e50;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-family: 'Courier New', monospace;
+            color: #e74c3c;
+            font-size: 24px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+
+        .fancy-text {
+            font-family: 'Lucida Handwriting', cursive;
+            color: #8e44ad;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .bold-text {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 18px;
+        }
+
+        /* Paragraph with background */
+        .highlight-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Styled section with image background */
+        .image-section {
+            background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        /* Different color styles */
+        .blue-section {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .green-section {
+            background-color: #2ecc71;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        /* Footer with gradient */
+        .footer {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Styling Demonstration</h1>
+        
+        <h2>Different Font Styles</h2>
+        <p class="fancy-text">This is fancy cursive text!</p>
+        <p class="bold-text">This is bold and green text!</p>
+
+        <div class="highlight-box">
+            <strong>Highlighted Information:</strong> This box has a yellow background with a left border. 
+            CSS allows us to create visually appealing designs with colors and borders.
+        </div>
+
+        <h2>Colored Sections</h2>
+        <div class="blue-section">
+            <h3>Blue Section</h3>
+            <p>This section has a blue background color. Background colors help separate content and improve readability.</p>
+        </div>
+
+        <div class="green-section">
+            <h3>Green Section</h3>
+            <p>This section has a green background color. Different colors can represent different types of information.</p>
+        </div>
+
+        <h2>Section with Background Image</h2>
+        <div class="image-section">
+            <h3>Beautiful Mountains</h3>
+            <p>This section has a background image with text overlay. The text has a shadow to make it readable.</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 CSS Demo | Created with various font styles and backgrounds</p>
+        </div>
+    </div>
+</body>
+</html>

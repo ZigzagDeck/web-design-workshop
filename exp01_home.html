@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<frameset rows="15%,85%">
+    <!-- Top Frame -->
+    <frame src="top.html" name="top">
+    
+    <!-- Bottom Frame with Left and Right -->
+    <frameset cols="20%,80%">
+        <frame src="left.html" name="left">
+        <frame src="main.html" name="right">
+    </frameset>
+</frameset>
+</html>
+
+<!-- top.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-family: Arial;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="logo">📚 BookStore</span>
+        <a href="main.html" target="right">Home</a>
+        <a href="../experiment-02-login/login.html" target="right">Login</a>
+        <a href="../experiment-05-registration/registration.html" target="right">Registration</a>
+        <a href="../experiment-03-catalogue/catalogue.html" target="right">Catalogue</a>
+        <a href="../experiment-04-cart/cart.html" target="right">Cart</a>
+    </div>
+</body>
+</html>
+
+<!-- left.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-family: Arial;
+        }
+        h3 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Categories</h3>
+    <ul>
+        <li><a href="../experiment-03-catalogue/catalogue.html?dept=CSE" target="right">CSE</a></li>
+        <li><a href="../experiment-03-catalogue/catalogue.html?dept=ECE" target="right">ECE</a></li>
+        <li><a href="../experiment-03-catalogue/catalogue.html?dept=EEE" target="right">EEE</a></li>
+        <li><a href="../experiment-03-catalogue/catalogue.html?dept=CIVIL" target="right">CIVIL</a></li>
+    </ul>
+</body>
+</html>
+
+<!-- main.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial;
+            background-color: white;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Online Bookstore</h1>
+    <p>This is your one-stop destination for all academic books across various departments.</p>
+    <p>Browse through our categories on the left to find books for CSE, ECE, EEE, and CIVIL departments.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Wide range of technical books</li>
+        <li>Easy to use interface</li>
+        <li>Secure login system</li>
+        <li>Shopping cart functionality</li>
+    </ul>
+</body>
+</html>

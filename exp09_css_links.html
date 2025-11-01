@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Link Styles Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .link-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        /* Style 1: Default Links */
+        .style1 a:link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .style1 a:visited {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        .style1 a:hover {
+            color: red;
+            text-decoration: none;
+        }
+
+        .style1 a:active {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* Style 2: Modern Links */
+        .style2 a:link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .style2 a:visited {
+            color: #9b59b6;
+            text-decoration: none;
+        }
+
+        .style2 a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+            background-color: #fff3cd;
+            padding: 2px 5px;
+        }
+
+        .style2 a:active {
+            color: white;
+            background-color: #27ae60;
+            padding: 2px 5px;
+        }
+
+        /* Style 3: Button-like Links */
+        .style3 a:link {
+            color: white;
+            background-color: #3498db;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .style3 a:visited {
+            background-color: #2980b9;
+        }
+
+        .style3 a:hover {
+            background-color: #2ecc71;
+            transform: scale(1.05);
+        }
+
+        .style3 a:active {
+            background-color: #27ae60;
+        }
+
+        /* Style 4: Underline Animation */
+        .style4 a {
+            color: #e74c3c;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+            padding-bottom: 3px;
+        }
+
+        .style4 a:visited {
+            color: #c0392b;
+        }
+
+        .style4 a:hover {
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        .style4 a:active {
+            color: #8e44ad;
+            border-bottom: 2px solid #8e44ad;
+        }
+
+        /* Background image with repeat control */
+        .repeat-demo {
+            background-image: url('https://via.placeholder.com/50');
+            background-repeat: repeat-x;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .no-repeat-demo {
+            background-image: url('https://via.placeholder.com/100');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 60px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 2px dashed #ccc;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Link States Demonstration</h1>
+
+        <h2>Style 1: Classic Links</h2>
+        <div class="link-section style1">
+            <p>
+                <a href="#">Unvisited Link (Blue)</a> | 
+                <a href="#visited">Visited Link (Purple)</a> | 
+                Hover over me (Red) | 
+                Click and hold (Orange)
+            </p>
+            <p><small>Blue → Purple when visited → Red on hover → Orange when clicked</small></p>
+        </div>
+
+        <h2>Style 2: Modern Links</h2>
+        <div class="link-section style2">
+            <p>
+                <a href="#">Home</a> | 
+                <a href="#about">About</a> | 
+                <a href="#services">Services</a> | 
+                <a href="#contact">Contact</a>
+            </p>
+            <p><small>Bold blue → Purple when visited → Red with yellow background on hover</small></p>
+        </div>
+
+        <h2>Style 3: Button-style Links</h2>
+        <div class="link-section style3">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+            <a href="#profile">Profile</a>
+            <p><small>Blue buttons → Green on hover → Darker green when clicked</small></p>
+        </div>
+
+        <h2>Style 4: Underline Animation</h2>
+        <div class="link-section style4">
+            <p>
+                <a href="#">Learn More</a> | 
+                <a href="#documentation">Documentation</a> | 
+                <a href="#tutorials">Tutorials</a>
+            </p>
+            <p><small>No underline → Underline appears on hover</small></p>
+        </div>
+
+        <h2>Background Repeat Demo</h2>
+        <div class="repeat-demo">
+            <p><strong>Background-repeat: repeat-x</strong> (repeats horizontally only)</p>
+        </div>
+
+        <div class="no-repeat-demo">
+            <p><strong>Background-repeat: no-repeat</strong> (appears only once)</p>
+        </div>
+    </div>
+</body>
+</html>
